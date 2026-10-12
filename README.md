@@ -10,11 +10,11 @@ Plain HTML, CSS and JavaScript; no install or build step. Vercel serves the repo
 - The redirect uses that link's URL after **10 visible seconds** (`delayMs` in `transition.js`). Update the visible initial number if changing the delay.
 - “Pausa” stops the timer; “Fortsätt” resumes it. Background-tab time does not count. Manual links work without JavaScript. No meta refresh is used, so pausing cannot be bypassed by another redirect mechanism.
 - `transition.css` contains the new styles, including reduced-motion behavior.
-- `vercel.json` serves this page at `/forelasning[.html]` and `/workshop[.html]` too. Original source files and `style.css` remain in git for reference.
+- `vercel.json` serves this page at `/forelasning[.html]` and `/workshop[.html]` too. The old HTML files are preserved in git history, not the deployed filesystem: existing files take precedence over these rewrites. Do not recreate files at those paths. Legacy `style.css` and images remain for reference.
 
 Preview: `python3 -m http.server 4173 --bind 127.0.0.1`, then open `http://127.0.0.1:4173/`. Python's server does not apply Vercel rewrites; verify those after deployment. Syntax: `node --check transition.js`.
 
-Before publishing, check desktop/mobile, keyboard links/pause, ten-second redirect, pause/resume, reduced motion and navigation without JavaScript. Check legacy routes on Vercel.
+Before publishing, check desktop/mobile, keyboard links/pause, ten-second redirect, pause/resume, reduced motion and navigation without JavaScript. After deployment, verify that the response body at all four legacy routes (with and without `.html`) matches the homepage.
 
 ## Copy and assets
 
