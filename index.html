@@ -1,117 +1,68 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-SALONGEN</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#EBEBD6">
+  <title>AI-salongen har blivit John &amp; Julius Salong</title>
+  <meta name="description" content="AI-salongen har blivit en fysisk salong. Välkommen till John &amp; Julius Salong i Hornstull, en plats designad för att väcka din kreativitet till liv.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="AI-salongen har blivit en fysisk salong.">
+  <meta property="og:description" content="Välkommen till John &amp; Julius Salong i Hornstull. En plats designad för att väcka din kreativitet till liv.">
+  <meta property="og:url" content="https://ai-salongen.se/">
+  <meta property="og:image" content="https://ai-salongen.se/assets/salongen.jpg">
+  <meta property="og:image:alt" content="Salongens färgade textilier och ett bord med böcker och blommor.">
+  <link rel="canonical" href="https://ai-salongen.se/">
+  <link rel="preload" href="/assets/fonts/Kerub-Beta02Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/calibre-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/transition.css">
+  <script src="/transition.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-links">
-                <a href="#om">Om AI-salongen</a>
-                <a href="#tjanster">Tjänster</a>
-                <a href="#podcast">Podcast</a>
-                <a href="#nyhetsbrev">Nyhetsbrev</a>
-                <a href="#kontakt" class="cta">Hör av dig</a>
-            </div>
-        </nav>
+  <div class="page">
+    <header class="masthead">
+      <span>AI-salongen.se</span>
+      <span>Hornstull, Stockholm</span>
     </header>
 
     <main>
-        <!-- Video Hero -->
-        <section class="hero-video-section">
-            <video autoplay muted loop playsinline>
-                <source src="images/hero-video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-logo-overlay">
-                <img src="images/logo.png" alt="AI-salongen">
-            </div>
-        </section>
+      <div class="invitation">
+        <h1><span>AI-salongen</span> <span>har blivit en</span> <span>fysisk salong.</span></h1>
 
-        <!-- Tagline -->
-        <section class="tagline-section">
-            <p>Vi kan skapa en mer <span class="highlight">mänsklig värld</span> med hjälp av AI. Men det kommer att kräva <span class="highlight">kreativitet</span> och <span class="highlight">experimenterande</span>.</p>
-            <p>AI-salongens <span class="highlight">mission</span> är att bidra till just detta.</p>
-        </section>
+        <div class="introduction">
+          <p class="welcome">Välkommen till John &amp; Julius Salong i Hornstull.</p>
+          <p>En plats designad för att väcka din kreativitet till liv. Här lär du dig bygga med AI: verktyg som underlättar ditt jobb, och mer ambitiösa projekt än du trodde var möjligt.</p>
+        </div>
 
-        <!-- Om AI-salongen -->
-        <section id="om" class="about">
-            <div class="content">
-                <h2>Hur kan AI bidra till en mer mänsklig värld?</h2>
-                <p>AI-utvecklingen innebär enligt logiken i vårt existerande system att många företag kommer att ersätta människor med AI, och att destruktiva krafter kommer att utnyttja tekniken för att t.ex. begå brott och driva på politisk polarisering.</p>
-                <p>Men om vi använder tekniken rätt kan den hjälpa oss att få ut mer av allt det vi värderar högst som människor. Till exempel att:</p>
-                <ul>
-                    <li>Bli bättre medmänniskor till varandra.</li>
-                    <li>Hitta våra värderingar och leva efter dom.</li>
-                    <li>Skapa och få djupare konstupplevelser.</li>
-                </ul>
-                <p>Detta kommer dock inte att ske av sig självt. Vi behöver använda vår kreativitet och experimentera för att hitta hur tekniken kan hjälpa oss. De flesta människor har idag jobbat upp en <em>Google-intuition</em> och vet när och hur de ska använda söktjänsten för att snabbt hitta information. Nu behöver vi jobba upp <em>AI-intuitionen</em>.</p>
-                <p>Mitt mål med AI-salongen är hjälpa till med just detta. Jag älskar att utforska nya sätt att använda tekniken för att få hjälp med det som är viktigt i mitt liv. Och jag tycker att det är ännu roligare att inspirera andra till att göra detsamma.</p>
-                <p class="signature">/John Airaksinen</p>
-            </div>
-        </section>
+        <div class="next-step">
+          <a class="enter-link" id="destination" href="https://johnandjulius.com/">
+            <span>Kliv in i salongen</span>
+            <svg viewBox="0 0 36 20" width="36" height="20" aria-hidden="true"><path d="M1 10h32M25 2l8 8-8 8"/></svg>
+          </a>
+          <span class="destination-name">johnandjulius.com</span>
+        </div>
 
-        <!-- Tjänster -->
-        <section id="tjanster" class="services">
-            <div class="content">
-                <div class="text-content">
-                    <h2>Skapa ditt team av AI-kollegor</h2>
-                    <p>Jag hjälper grupper på företag att skapa sina team av AI-kollegor, som kan assistera med det som är viktigt på jobbet och i livet.</p>
-                    <p>Hittills har jag gjort det genom en föreläsning, en workshop och skräddarsydda konsultuppdrag. Bland annat för team på Världsbanken, ICA och Karolinska institutet.</p>
-                    <div class="cta-buttons">
-                        <a href="forelasning.html" class="button">Läs mer om föreläsningen</a>
-                        <a href="workshop.html" class="button">Läs mer om workshoppen</a>
-                    </div>
-                </div>
-                <img src="images/workshop-photo.jpg" alt="Workshop" class="section-image">
-            </div>
-        </section>
+        <div class="redirect" id="redirect" hidden>
+          <p class="redirect-message" id="redirect-message">Du skickas vidare om <span id="seconds" role="timer" aria-live="off">10</span> sekunder.</p>
+          <button class="pause-button" id="pause" type="button" aria-label="Pausa den automatiska hänvisningen">Pausa</button>
+        </div>
+        <p class="sr-only" id="redirect-status" role="status"></p>
+      </div>
 
-        <!-- Podcast -->
-        <section id="podcast" class="podcast">
-            <div class="content">
-                <div class="text-content">
-                    <h2>Podcast</h2>
-                    <p>I podcasten får du möta forskare, konstnärer, eldsjälar och tänkare som utifrån sin kunskap och erfarenheter hittar både inspirerande sätt att använda AI för att göra nytta, och faror med tekniken.</p>
-                    <div class="podcast-links">
-                        <a href="https://open.spotify.com/show/1a4JaQveB6j8poY5PXOgBB" target="_blank" class="button">Lyssna på Spotify</a>
-                        <a href="https://podcasts.apple.com/se/podcast/ai-salongen/id1690584364" target="_blank" class="button">Lyssna på Apple Podcasts</a>
-                    </div>
-                </div>
-                <img src="images/podcast-head.png" alt="Podcast" class="podcast-image">
-            </div>
-        </section>
-
-        <!-- Scensamtal & salonger -->
-        <section class="events">
-            <h2>Scensamtal & salonger</h2>
-            <p>De fysiska AI-salongerna är en plats där du får nya tankar från gäster som intervjuas på scenen eller sitter tillsammans med dig runt bordet. Du får möjligheten att diskutera med andra som är nyfikna på AI-utvecklingen och prova på nya sätt att använda tekniken i ditt liv.</p>
-            <a href="https://www.instagram.com/aisalongen/" target="_blank" class="button">Se bilder på Instagram</a>
-        </section>
-
-        <!-- Nyhetsbrev -->
-        <section id="nyhetsbrev" class="newsletter">
-            <h2>Nyhetsbrev</h2>
-            <p>Inbjudningar till scensamtal och salonger, och återblickar till de som varit. Experiment och länkar till AI-salongens chatbottar. Tips som hjälper dig att hitta de allra mest spännande tankarna i AI-bruset.</p>
-            <a href="https://aisalongen.substack.com/" target="_blank" class="button">Ja tack, bjud in mig!</a>
-        </section>
-
-        <!-- John Portrait -->
-        <section class="john-portrait">
-            <img src="images/john-portrait.jpg" alt="John Airaksinen">
-        </section>
-
-        <!-- Kontakt -->
-        <section id="kontakt" class="contact">
-            <h2>Hör av dig!</h2>
-            <p>Mejla John på <a href="mailto:john@ai-salongen.se">john@ai-salongen.se</a> eller ring på <a href="tel:+46707895957">0707895957</a>.</p>
-        </section>
+      <figure class="salon">
+        <div class="photograph">
+          <img src="/assets/salongen.jpg" alt="Ljuset faller genom salongens färgade textilier, intill ett bord med böcker och blommor." width="1200" height="1600" fetchpriority="high">
+        </div>
+        <figcaption>John &amp; Julius Salong <span aria-hidden="true">·</span> Hornstull</figcaption>
+      </figure>
     </main>
 
     <footer>
-        <p>&copy; 2024 AI-salongen. John Airaksinen.</p>
+      <a href="https://johnandjulius.com/" aria-label="Besök John &amp; Julius Salong">
+        <img src="/assets/john-julius-wordmark.png" alt="John &amp; Julius Salong" width="1566" height="566">
+      </a>
     </footer>
+  </div>
 </body>
 </html>
